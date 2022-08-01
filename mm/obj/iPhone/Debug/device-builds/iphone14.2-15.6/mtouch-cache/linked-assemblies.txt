@@ -1,0 +1,5 @@
+RemoveDynamicRegistrar:true
+/Users/prestonblake/Projects/mm/mm/bin/iPhone/Debug/device-builds/iphone14.2-15.6/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhone/Debug/device-builds/iphone14.2-15.6/mtouch-cache/1-Link/mm.exe
+/Users/prestonblake/Projects/mm/mm/bin/iPhone/Debug/device-builds/iphone14.2-15.6/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhone/Debug/device-builds/iphone14.2-15.6/mtouch-cache/1-Link/mscorlib.dll
+/Users/prestonblake/Projects/mm/mm/bin/iPhone/Debug/device-builds/iphone14.2-15.6/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhone/Debug/device-builds/iphone14.2-15.6/mtouch-cache/1-Link/Xamarin.iOS.dll
+/Users/prestonblake/Projects/mm/mm/bin/iPhone/Debug/device-builds/iphone14.2-15.6/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhone/Debug/device-builds/iphone14.2-15.6/mtouch-cache/1-Link/System.dll

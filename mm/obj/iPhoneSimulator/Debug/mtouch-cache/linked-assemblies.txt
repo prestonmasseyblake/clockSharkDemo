@@ -1,0 +1,11 @@
+RemoveDynamicRegistrar:false
+/Users/prestonblake/Projects/mm/mm/bin/iPhoneSimulator/Debug/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/mm.exe
+/Users/prestonblake/Projects/mm/mm/bin/iPhoneSimulator/Debug/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/mscorlib.dll
+/Users/prestonblake/Projects/mm/mm/bin/iPhoneSimulator/Debug/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/Xamarin.iOS.dll
+/Users/prestonblake/Projects/mm/mm/bin/iPhoneSimulator/Debug/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.dll
+/Users/prestonblake/Projects/mm/mm/bin/iPhoneSimulator/Debug/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/Mono.Security.dll
+/Users/prestonblake/Projects/mm/mm/bin/iPhoneSimulator/Debug/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.Xml.dll
+/Users/prestonblake/Projects/mm/mm/bin/iPhoneSimulator/Debug/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.Numerics.dll
+/Users/prestonblake/Projects/mm/mm/bin/iPhoneSimulator/Debug/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.Core.dll
+/Users/prestonblake/Projects/mm/mm/bin/iPhoneSimulator/Debug/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.Net.Http.dll
+/Users/prestonblake/Projects/mm/mm/bin/iPhoneSimulator/Debug/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhoneSimulator/Debug/mtouch-cache/1-Link/System.Drawing.Common.dll

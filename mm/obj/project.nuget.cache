@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "srODr7vf3VqmLd44fcXYmM3BtFgsg5KW4I6/TKc6e0+jc5S8ztjOrJd2nGFw6xQuTRtsZm0dUga0Fp6yTXxlqg==",
+  "success": true,
+  "projectFilePath": "/Users/prestonblake/Projects/mm/mm/mm.csproj",
+  "expectedPackageFiles": [
+    "/Users/prestonblake/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/prestonblake/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512"
+  ],
+  "logs": []
+}
