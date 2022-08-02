@@ -8,6 +8,37 @@ namespace mm
 {
     public partial class ViewController : UIViewController
     {
+
+        async void GetUserLocation()
+        {
+            try
+            {
+                var location = await Geolocation.GetLastKnownLocationAsync();
+
+                if (location != null)
+                {
+                    Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
+                }
+            }
+            catch (FeatureNotSupportedException fnsEx)
+            {
+                // Handle not supported on device exception
+            }
+            catch (FeatureNotEnabledException fneEx)
+            {
+                // Handle not enabled on device exception
+            }
+            catch (PermissionException pEx)
+            {
+                // Handle permission exception
+            }
+            catch (Exception ex)
+            {
+                // Unable to get location
+            }
+        }
+
+       
         public void StartTimer(TimeSpan interval, Func<bool> callback)
         {
             NSTimer timer = NSTimer.CreateRepeatingTimer(interval, t =>
@@ -28,30 +59,15 @@ namespace mm
         int tensHoursplace = 0;
         List<Info> infos;
         //create a global array of dictionaries
-        string[] times = new string[4];
-        int i = 0;
-     
-
         public ViewController (IntPtr handle) : base (handle)
         {
         }
-
         public override void ViewDidLoad ()
         {
             base.ViewDidLoad ();
-
-
+            GetUserLocation();
             // location based stuff
-           
-
-
-
             //end location based stuff
-
-
-
-
-
             UIApplication.SharedApplication.StatusBarStyle = UIStatusBarStyle.LightContent;
             DateTimeLabel.Text = DateTime.Now.ToString("dd MMMM, yyyy").ToUpper();
 
@@ -67,12 +83,6 @@ namespace mm
             //InfoTableView.RowHeight = UITableView.AutomaticDimension;
             //InfoTableView.EstimatedRowHeight = 100f;
             InfoTableView.ReloadData();
-          
-
-
-
-
-           
             nexterButton.TouchUpInside += NexterButton_TouchUpInside;
             // Perform any additional setup after loading the view, typically from a nib.
         }

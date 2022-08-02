@@ -12,10 +12,15 @@ namespace mm
             this.infos = infos;
 
         }
+
+       
+
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
-            
            
+
+
+
             var cell = (InfoCell)tableView.DequeueReusableCell("cell_id", indexPath);
             
             var info = infos[indexPath.Row];

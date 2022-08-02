@@ -3,3 +3,7 @@ RemoveDynamicRegistrar:true
 /Users/prestonblake/Projects/mm/mm/bin/iPhone/Debug/device-builds/iphone14.2-15.6/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhone/Debug/device-builds/iphone14.2-15.6/mtouch-cache/1-Link/mscorlib.dll
 /Users/prestonblake/Projects/mm/mm/bin/iPhone/Debug/device-builds/iphone14.2-15.6/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhone/Debug/device-builds/iphone14.2-15.6/mtouch-cache/1-Link/Xamarin.iOS.dll
 /Users/prestonblake/Projects/mm/mm/bin/iPhone/Debug/device-builds/iphone14.2-15.6/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhone/Debug/device-builds/iphone14.2-15.6/mtouch-cache/1-Link/System.dll
+/Users/prestonblake/Projects/mm/mm/bin/iPhone/Debug/device-builds/iphone14.2-15.6/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhone/Debug/device-builds/iphone14.2-15.6/mtouch-cache/1-Link/System.Core.dll
+/Users/prestonblake/Projects/mm/mm/bin/iPhone/Debug/device-builds/iphone14.2-15.6/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhone/Debug/device-builds/iphone14.2-15.6/mtouch-cache/1-Link/System.Drawing.Common.dll
+/Users/prestonblake/Projects/mm/mm/bin/iPhone/Debug/device-builds/iphone14.2-15.6/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhone/Debug/device-builds/iphone14.2-15.6/mtouch-cache/1-Link/Xamarin.Essentials.dll
+/Users/prestonblake/Projects/mm/mm/bin/iPhone/Debug/device-builds/iphone14.2-15.6/mm.app:/Users/prestonblake/Projects/mm/mm/obj/iPhone/Debug/device-builds/iphone14.2-15.6/mtouch-cache/1-Link/OpenTK-1.0.dll

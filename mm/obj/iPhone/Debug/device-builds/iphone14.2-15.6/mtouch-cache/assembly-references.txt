@@ -8,3 +8,5 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/15.10.0.5/lib/mono/Xamarin.iOS/System.Core.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/15.10.0.5/lib/mono/Xamarin.iOS/System.Net.Http.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/15.10.0.5/lib/mono/Xamarin.iOS/Facades/System.Drawing.Common.dll
+/Users/prestonblake/.nuget/packages/xamarin.essentials/1.6.1/lib/xamarinios10/Xamarin.Essentials.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/15.10.0.5/lib/mono/Xamarin.iOS/OpenTK-1.0.dll

@@ -120,6 +120,8 @@
     <ItemGroup>
         <InterfaceDefinition Include="LaunchScreen.storyboard" />
         <InterfaceDefinition Include="Main.storyboard" />
+        <InterfaceDefinition Include="MyViewContrler.xib" />
+        <InterfaceDefinition Include="View.xib" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Info.plist" />
@@ -139,6 +141,19 @@
         </Compile>
         <Compile Include="Info.cs" />
         <Compile Include="InfoTVS.cs" />
+        <Compile Include="MyViewController.cs" />
+        <Compile Include="MyViewController.designer.cs">
+          <DependentUpon>MyViewController.cs</DependentUpon>
+        </Compile>
+        <Compile Include="MyViewControllerr.cs" />
+        <Compile Include="MyViewControllerr.designer.cs">
+          <DependentUpon>MyViewControllerr.cs</DependentUpon>
+        </Compile>
+        <Compile Include="PopUpView.cs" />
+        <Compile Include="PopUpView.designer.cs">
+          <DependentUpon>PopUpView.cs</DependentUpon>
+        </Compile>
+        <Compile Include="ClockInLocation.cs" />
     </ItemGroup>
     <ItemGroup>
       <BundleResource Include="Resources\plybtn.png" />

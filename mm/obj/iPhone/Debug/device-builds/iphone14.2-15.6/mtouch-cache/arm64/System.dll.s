@@ -280,6 +280,518 @@ ldr x0, [x16, #200]
 
 Lme_3:
 .text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_System_Diagnostics_Stopwatch_GetTimestamp
+wrapper_managed_to_native_System_Diagnostics_Stopwatch_GetTimestamp:
+.word 0xa9b77bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf90013be
+.word 0xa902d3b3
+.word 0xa903dbb5
+.word 0xa904e3b7
+.word 0xa905ebb9
+.word 0xa906f3bb
+.word 0xf9003fbd
+.word 0x910003f1
+.word 0xf90043b1
+
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xd63f0000
+.word 0xaa0003fa
+.word 0x910043a0
+.word 0xf9400341
+.word 0xf9000ba1
+.word 0xf9000340
+bl _ves_icall_System_Diagnostics_Stopwatch_GetTimestamp
+.word 0xaa0003e1
+
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0xaa0103f9
+.word 0x350001e0
+.word 0x14000001
+.word 0xf9400ba0
+.word 0xf9000340
+.word 0xaa1903e0
+.word 0xa94567b8
+.word 0xf94033ba
+.word 0x910003bf
+.word 0xa8c97bfd
+.word 0xd65f03c0
+.word 0x91022300
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1803e0
+bl _p_7
+bl _p_8
+.word 0xaa0003f8
+.word 0xb5ffff20
+.word 0x17fffff0
+
+Lme_4:
+.text
+	.align 4
+	.no_dead_strip System_Diagnostics_Stopwatch__ctor
+System_Diagnostics_Stopwatch__ctor:
+.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/src/Xamarin.iOS/mcs/class/System/System.Diagnostics/Stopwatch.cs"
+.loc 2 57 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_5:
+.text
+	.align 4
+	.no_dead_strip System_Diagnostics_Stopwatch_get_Elapsed
+System_Diagnostics_Stopwatch_get_Elapsed:
+.loc 2 65 0 prologue_end
+.word 0xa9bc7bfd
+.word 0x910003fd
+.word 0xf90013a0
+
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x0, [x16, #240]
+.word 0x39400000
+.word 0x34000ac0
+.loc 2 68 0
+.word 0xf94013a0
+bl _p_9
+
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x1, [x16, #248]
+.word 0xf9400021
+.word 0xd292d002
+.word 0xf2a01302
+.word 0xeb1f005f
+.word 0x10000011
+.word 0x54000b00
+.word 0xd29ffffe
+.word 0xf2bffffe
+.word 0xf2dffffe
+.word 0xf2fffffe
+.word 0xeb1e005f
+.word 0x9a9f17e3
+.word 0xd2800004
+.word 0xf2f00004
+.word 0xeb04003f
+.word 0x9a9f17e4
+.word 0xa040063
+.word 0xd280003e
+.word 0x6b1e007f
+.word 0x10000011
+.word 0x540008c0
+.word 0xf100005f
+.word 0x10000011
+.word 0x540008c0
+.word 0xd2800010
+.word 0xf2f00010
+.word 0xeb10003f
+.word 0x9a9f17f1
+.word 0xd29ffff0
+.word 0xf2bffff0
+.word 0xf2dffff0
+.word 0xf2fffff0
+.word 0xeb10005f
+.word 0x9a9f17f0
+.word 0x8a110210
+.word 0xf100061f
+.word 0x10000011
+.word 0x540006a0
+.word 0x9ac20c21
+.word 0xeb1f003f
+.word 0x10000011
+.word 0x54000680
+.word 0xd29ffffe
+.word 0xf2bffffe
+.word 0xf2dffffe
+.word 0xf2fffffe
+.word 0xeb1e003f
+.word 0x9a9f17e2
+.word 0xd2800003
+.word 0xf2f00003
+.word 0xeb03001f
+.word 0x9a9f17e3
+.word 0xa030042
+.word 0xd280003e
+.word 0x6b1e005f
+.word 0x10000011
+.word 0x54000440
+.word 0xf100003f
+.word 0x10000011
+.word 0x54000440
+.word 0xd2800010
+.word 0xf2f00010
+.word 0xeb10001f
+.word 0x9a9f17f1
+.word 0xd29ffff0
+.word 0xf2bffff0
+.word 0xf2dffff0
+.word 0xf2fffff0
+.word 0xeb10003f
+.word 0x9a9f17f0
+.word 0x8a110210
+.word 0xf100061f
+.word 0x10000011
+.word 0x54000220
+.word 0x9ac10c00
+.word 0xf9001bbf
+.word 0xf9001ba0
+.word 0xf9401ba0
+.word 0xf9000ba0
+.word 0x14000007
+.loc 2 71 0
+.word 0xf94013a0
+bl _p_9
+.word 0xf90017bf
+.word 0xf90017a0
+.word 0xf94017a0
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0x910003bf
+.word 0xa8c47bfd
+.word 0xd65f03c0
+.word 0xd28010e0
+.word 0xaa1103e1
+bl _p_10
+.word 0xd2800a80
+.word 0xaa1103e1
+bl _p_10
+
+Lme_6:
+.text
+	.align 4
+	.no_dead_strip System_Diagnostics_Stopwatch_get_ElapsedTicks
+System_Diagnostics_Stopwatch_get_ElapsedTicks:
+.loc 2 90 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000bba
+.word 0xaa0003fa
+.word 0x39408340
+.word 0x35000060
+.word 0xf9400b40
+.word 0x14000006
+bl _p_11
+.word 0xf9400f41
+.word 0xcb010000
+.word 0xf9400b41
+.word 0x8b010000
+.word 0xf9400bba
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_7:
+.text
+	.align 4
+	.no_dead_strip System_Diagnostics_Stopwatch_Start
+System_Diagnostics_Stopwatch_Start:
+.loc 2 105 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000bba
+.word 0xaa0003fa
+.word 0x39408340
+.word 0x350000a0
+.loc 2 107 0
+bl _p_11
+.word 0xf9000f40
+.loc 2 108 0
+.word 0xd280003e
+.word 0x3900835e
+.loc 2 109 0
+.word 0xf9400bba
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_8:
+.text
+	.align 4
+	.no_dead_strip System_Diagnostics_Stopwatch_Stop
+System_Diagnostics_Stopwatch_Stop:
+.loc 2 113 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000bba
+.word 0xaa0003fa
+.word 0x39408340
+.word 0x34000200
+.loc 2 115 0
+.word 0xf9400b40
+.word 0xf90013a0
+bl _p_11
+.word 0xaa0003e1
+.word 0xf94013a0
+.word 0xf9400f42
+.word 0xcb020021
+.word 0x8b010000
+.word 0xf9000b40
+.loc 2 116 0
+.word 0xf9400b40
+.word 0xeb1f001f
+.word 0x5400006a
+.loc 2 117 0
+.word 0xd2800000
+.word 0xf9000b40
+.loc 2 118 0
+.word 0x3900835f
+.loc 2 119 0
+.word 0xf9400bba
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_9:
+.text
+	.align 4
+	.no_dead_strip System_Diagnostics_Stopwatch__cctor
+System_Diagnostics_Stopwatch__cctor:
+.loc 2 44 0 prologue_end
+.word 0xa9bf7bfd
+.word 0x910003fd
+.word 0xd292d001
+.word 0xf2a01301
+
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x0, [x16, #248]
+.word 0xf9000001
+.loc 2 46 0
+
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x0, [x16, #240]
+.word 0xd280003e
+.word 0x3900001e
+.word 0x910003bf
+.word 0xa8c17bfd
+.word 0xd65f03c0
+
+Lme_a:
+.text
+	.align 4
+	.no_dead_strip System_ComponentModel_TypeConverterAttribute__ctor
+System_ComponentModel_TypeConverterAttribute__ctor:
+.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/src/Xamarin.iOS/external/corefx/src/System.ComponentModel.TypeConverter/src/System/ComponentModel/TypeConverterAttribute.cs"
+.loc 3 31 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x0, [x16, #256]
+.word 0xf9400000
+.word 0xf90013a0
+.word 0xf9400ba0
+.word 0x91004001
+.word 0xd5033bbf
+.word 0xf94013a0
+.word 0xf9000020
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 3 32 0
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_b:
+.text
+	.align 4
+	.no_dead_strip System_ComponentModel_TypeConverterAttribute__ctor_System_Type
+System_ComponentModel_TypeConverterAttribute__ctor_System_Type:
+.loc 3 42 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9000fa1
+.word 0xf9400fa0
+.word 0xf9400fa1
+.word 0xf9400021
+.word 0xf9413830
+.word 0xd63f0200
+.word 0xf90013a0
+.word 0xf9400ba0
+.word 0x91004001
+.word 0xd5033bbf
+.word 0xf94013a0
+.word 0xf9000020
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 3 43 0
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_c:
+.text
+	.align 4
+	.no_dead_strip System_ComponentModel_TypeConverterAttribute_get_ConverterTypeName
+System_ComponentModel_TypeConverterAttribute_get_ConverterTypeName:
+.loc 3 62 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9400800
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_d:
+.text
+	.align 4
+	.no_dead_strip System_ComponentModel_TypeConverterAttribute_Equals_object
+System_ComponentModel_TypeConverterAttribute_Equals_object:
+.loc 3 66 0 prologue_end
+.word 0xa9bd7bfd
+.word 0x910003fd
+.word 0xf9000bb8
+.word 0xf9000fba
+.word 0xf90013a0
+.word 0xaa0103fa
+.word 0xaa1a03f8
+.word 0xeb1f035f
+.word 0x54000160
+.word 0xf9400340
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400800
+
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x1, [x16, #264]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xd2800018
+.word 0xaa1803fa
+.loc 3 67 0
+.word 0xb4000118
+.word 0x3940035e
+.word 0xf9400b40
+.word 0xf94013a1
+.word 0xf9400821
+bl _p_12
+.word 0x53001c00
+.word 0x14000002
+.word 0xd2800000
+.word 0xf9400bb8
+.word 0xf9400fba
+.word 0x910003bf
+.word 0xa8c37bfd
+.word 0xd65f03c0
+
+Lme_e:
+.text
+	.align 4
+	.no_dead_strip System_ComponentModel_TypeConverterAttribute_GetHashCode
+System_ComponentModel_TypeConverterAttribute_GetHashCode:
+.loc 3 72 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0xf9400ba0
+.word 0xf9400801
+.word 0xaa0103e0
+.word 0xf9400021
+.word 0xf9402830
+.word 0xd63f0200
+.word 0x93407c00
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_f:
+.text
+	.align 4
+	.no_dead_strip System_ComponentModel_TypeConverterAttribute__cctor
+System_ComponentModel_TypeConverterAttribute__cctor:
+.loc 3 21 0 prologue_end
+.word 0xa9be7bfd
+.word 0x910003fd
+
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x0, [x16, #272]
+.word 0xd2800301
+bl _p_3
+.word 0xaa0003e1
+
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x0, [x16, #256]
+.word 0xf9400000
+.word 0xf9000fa0
+.word 0x91004022
+.word 0xd5033bbf
+.word 0xf9400fa0
+.word 0xf9000040
+.word 0xd349fc42
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0042
+
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x3, [x16, #16]
+.word 0x8b030042
+.word 0xd280003e
+.word 0x3900005e
+
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x0, [x16, #280]
+.word 0xf9000ba0
+.word 0xd5033bbf
+.word 0xf9400ba0
+.word 0xf9000001
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_10:
+.text
+	.align 4
+	.no_dead_strip System_ComponentModel_TypeConverter__ctor
+System_ComponentModel_TypeConverter__ctor:
+.word 0xa9be7bfd
+.word 0x910003fd
+.word 0xf9000ba0
+.word 0x910003bf
+.word 0xa8c27bfd
+.word 0xd65f03c0
+
+Lme_11:
+.text
 	.align 3
 jit_code_end:
 
@@ -292,6 +804,20 @@ bl Mono_SystemCertificateProvider__ctor
 bl Mono_SystemDependencyProvider_Initialize
 bl Mono_SystemDependencyProvider__ctor
 bl Mono_SystemDependencyProvider__cctor
+bl wrapper_managed_to_native_System_Diagnostics_Stopwatch_GetTimestamp
+bl System_Diagnostics_Stopwatch__ctor
+bl System_Diagnostics_Stopwatch_get_Elapsed
+bl System_Diagnostics_Stopwatch_get_ElapsedTicks
+bl System_Diagnostics_Stopwatch_Start
+bl System_Diagnostics_Stopwatch_Stop
+bl System_Diagnostics_Stopwatch__cctor
+bl System_ComponentModel_TypeConverterAttribute__ctor
+bl System_ComponentModel_TypeConverterAttribute__ctor_System_Type
+bl System_ComponentModel_TypeConverterAttribute_get_ConverterTypeName
+bl System_ComponentModel_TypeConverterAttribute_Equals_object
+bl System_ComponentModel_TypeConverterAttribute_GetHashCode
+bl System_ComponentModel_TypeConverterAttribute__cctor
+bl System_ComponentModel_TypeConverter__ctor
 bl method_addresses
 method_addresses_end:
 
@@ -311,7 +837,11 @@ unbox_trampoline_addresses:
 unwind_info:
 
 	.byte 13,12,31,0,68,14,32,157,4,158,3,68,13,29,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10,13
-	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,39,12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148
+	.byte 12,68,149,11,150,10,68,151,9,152,8,68,153,7,154,6,68,155,5,156,4,13,12,31,0,68,14,64,157,8,158,7
+	.byte 68,13,29,16,12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2,16,12,31,0,68,14,48,157,6,158,5,68
+	.byte 13,29,68,154,4,13,12,31,0,68,14,16,157,2,158,1,68,13,29,19,12,31,0,68,14,48,157,6,158,5,68,13
+	.byte 29,68,152,4,68,154,3
 
 .text
 	.align 4
@@ -322,53 +852,101 @@ plt__jit_icall_mono_monitor_enter_v4_internal:
 _p_1:
 adrp x16, mono_aot_System_got@PAGE+0
 add x16, x16, mono_aot_System_got@PAGEOFF
-ldr x16, [x16, #248]
+ldr x16, [x16, #296]
 br x16
-.word 89
+.word 176
 	.no_dead_strip plt__jit_icall_ves_icall_thread_finish_async_abort
 plt__jit_icall_ves_icall_thread_finish_async_abort:
 _p_2:
 adrp x16, mono_aot_System_got@PAGE+0
 add x16, x16, mono_aot_System_got@PAGEOFF
-ldr x16, [x16, #256]
+ldr x16, [x16, #304]
 br x16
-.word 92
+.word 179
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_3:
 adrp x16, mono_aot_System_got@PAGE+0
 add x16, x16, mono_aot_System_got@PAGEOFF
-ldr x16, [x16, #264]
+ldr x16, [x16, #312]
 br x16
-.word 95
+.word 182
 	.no_dead_strip plt_Mono_SystemDependencyProvider__ctor
 plt_Mono_SystemDependencyProvider__ctor:
 _p_4:
 adrp x16, mono_aot_System_got@PAGE+0
 add x16, x16, mono_aot_System_got@PAGEOFF
-ldr x16, [x16, #272]
+ldr x16, [x16, #320]
 br x16
-.word 103
+.word 190
 	.no_dead_strip plt_System_Threading_Monitor_Exit_object
 plt_System_Threading_Monitor_Exit_object:
 _p_5:
 adrp x16, mono_aot_System_got@PAGE+0
 add x16, x16, mono_aot_System_got@PAGEOFF
-ldr x16, [x16, #280]
+ldr x16, [x16, #328]
 br x16
-.word 105
+.word 192
 	.no_dead_strip plt_Mono_DependencyInjector_Register_Mono_ISystemDependencyProvider
 plt_Mono_DependencyInjector_Register_Mono_ISystemDependencyProvider:
 _p_6:
 adrp x16, mono_aot_System_got@PAGE+0
 add x16, x16, mono_aot_System_got@PAGEOFF
-ldr x16, [x16, #288]
+ldr x16, [x16, #336]
 br x16
-.word 110
+.word 197
+	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
+plt__jit_icall_mono_arch_rethrow_exception:
+_p_7:
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x16, [x16, #344]
+br x16
+.word 202
+	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
+plt__jit_icall_mono_thread_interruption_checkpoint:
+_p_8:
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x16, [x16, #352]
+br x16
+.word 204
+	.no_dead_strip plt_System_Diagnostics_Stopwatch_get_ElapsedTicks
+plt_System_Diagnostics_Stopwatch_get_ElapsedTicks:
+_p_9:
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x16, [x16, #360]
+br x16
+.word 207
+	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
+plt__jit_icall_mono_arch_throw_corlib_exception:
+_p_10:
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x16, [x16, #368]
+br x16
+.word 209
+	.no_dead_strip plt_System_Diagnostics_Stopwatch_GetTimestamp
+plt_System_Diagnostics_Stopwatch_GetTimestamp:
+_p_11:
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x16, [x16, #376]
+br x16
+.word 211
+	.no_dead_strip plt_string_op_Equality_string_string
+plt_string_op_Equality_string_string:
+_p_12:
+adrp x16, mono_aot_System_got@PAGE+0
+add x16, x16, mono_aot_System_got@PAGEOFF
+ldr x16, [x16, #384]
+br x16
+.word 213
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_System_got, 296
+.lcomm mono_aot_System_got, 392
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -478,14 +1056,14 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 30,296,7,5,0,98,387000831,0
-	.long 459,128,8,8,8,9,8388607,0
-	.long 4,25,1008,0,0,536,344,184
-	.long 0,288,320,232,0,176,32,528
+	.long 36,392,13,19,1,98,387000831,0
+	.long 1347,128,8,8,8,9,8388607,0
+	.long 4,25,1960,0,0,600,408,208
+	.long 0,328,376,264,0,192,48,592
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
-	.byte 110,106,6,74,252,181,131,236,143,201,244,53,125,244,124,117
+	.byte 155,26,217,167,179,182,30,197,177,96,246,77,6,99,31,180
 	.globl _mono_aot_module_System_info
 	.align 3
 _mono_aot_module_System_info:
@@ -745,6 +1323,670 @@ LDIFF_SYM35=Lme_3 - Mono_SystemDependencyProvider__cctor
 	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
 	.align 3
 Lfde3_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_System.Diagnostics.Stopwatch:GetTimestamp"
+	.asciz "wrapper_managed_to_native_System_Diagnostics_Stopwatch_GetTimestamp"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_System_Diagnostics_Stopwatch_GetTimestamp
+	.quad Lme_4
+
+	.byte 2,118,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM36=Lfde4_end - Lfde4_start
+	.long LDIFF_SYM36
+Lfde4_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_System_Diagnostics_Stopwatch_GetTimestamp
+
+LDIFF_SYM37=Lme_4 - wrapper_managed_to_native_System_Diagnostics_Stopwatch_GetTimestamp
+	.long LDIFF_SYM37
+	.long 0
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
+	.byte 154,6,68,155,5,156,4
+	.align 3
+Lfde4_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_6:
+
+	.byte 5
+	.asciz "System_Int64"
+
+	.byte 24,16
+LDIFF_SYM38=LTDIE_3 - Ldebug_info_start
+	.long LDIFF_SYM38
+	.byte 2,35,0,6
+	.asciz "m_value"
+
+LDIFF_SYM39=LDIE_I8 - Ldebug_info_start
+	.long LDIFF_SYM39
+	.byte 2,35,16,0,7
+	.asciz "System_Int64"
+
+LDIFF_SYM40=LTDIE_6 - Ldebug_info_start
+	.long LDIFF_SYM40
+LTDIE_6_POINTER:
+
+	.byte 13
+LDIFF_SYM41=LTDIE_6 - Ldebug_info_start
+	.long LDIFF_SYM41
+LTDIE_6_REFERENCE:
+
+	.byte 14
+LDIFF_SYM42=LTDIE_6 - Ldebug_info_start
+	.long LDIFF_SYM42
+LTDIE_5:
+
+	.byte 5
+	.asciz "System_Diagnostics_Stopwatch"
+
+	.byte 40,16
+LDIFF_SYM43=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM43
+	.byte 2,35,0,6
+	.asciz "elapsed"
+
+LDIFF_SYM44=LDIE_I8 - Ldebug_info_start
+	.long LDIFF_SYM44
+	.byte 2,35,16,6
+	.asciz "started"
+
+LDIFF_SYM45=LDIE_I8 - Ldebug_info_start
+	.long LDIFF_SYM45
+	.byte 2,35,24,6
+	.asciz "is_running"
+
+LDIFF_SYM46=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM46
+	.byte 2,35,32,0,7
+	.asciz "System_Diagnostics_Stopwatch"
+
+LDIFF_SYM47=LTDIE_5 - Ldebug_info_start
+	.long LDIFF_SYM47
+LTDIE_5_POINTER:
+
+	.byte 13
+LDIFF_SYM48=LTDIE_5 - Ldebug_info_start
+	.long LDIFF_SYM48
+LTDIE_5_REFERENCE:
+
+	.byte 14
+LDIFF_SYM49=LTDIE_5 - Ldebug_info_start
+	.long LDIFF_SYM49
+	.byte 2
+	.asciz "System.Diagnostics.Stopwatch:.ctor"
+	.asciz "System_Diagnostics_Stopwatch__ctor"
+
+	.byte 2,55
+	.quad System_Diagnostics_Stopwatch__ctor
+	.quad Lme_5
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM50=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM50
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM51=Lfde5_end - Lfde5_start
+	.long LDIFF_SYM51
+Lfde5_start:
+
+	.long 0
+	.align 3
+	.quad System_Diagnostics_Stopwatch__ctor
+
+LDIFF_SYM52=Lme_5 - System_Diagnostics_Stopwatch__ctor
+	.long LDIFF_SYM52
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde5_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Diagnostics.Stopwatch:get_Elapsed"
+	.asciz "System_Diagnostics_Stopwatch_get_Elapsed"
+
+	.byte 2,65
+	.quad System_Diagnostics_Stopwatch_get_Elapsed
+	.quad Lme_6
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM53=LTDIE_5_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM53
+	.byte 2,141,32,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM54=Lfde6_end - Lfde6_start
+	.long LDIFF_SYM54
+Lfde6_start:
+
+	.long 0
+	.align 3
+	.quad System_Diagnostics_Stopwatch_get_Elapsed
+
+LDIFF_SYM55=Lme_6 - System_Diagnostics_Stopwatch_get_Elapsed
+	.long LDIFF_SYM55
+	.long 0
+	.byte 12,31,0,68,14,64,157,8,158,7,68,13,29
+	.align 3
+Lfde6_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Diagnostics.Stopwatch:get_ElapsedTicks"
+	.asciz "System_Diagnostics_Stopwatch_get_ElapsedTicks"
+
+	.byte 2,90
+	.quad System_Diagnostics_Stopwatch_get_ElapsedTicks
+	.quad Lme_7
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM56=LTDIE_5_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM56
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM57=Lfde7_end - Lfde7_start
+	.long LDIFF_SYM57
+Lfde7_start:
+
+	.long 0
+	.align 3
+	.quad System_Diagnostics_Stopwatch_get_ElapsedTicks
+
+LDIFF_SYM58=Lme_7 - System_Diagnostics_Stopwatch_get_ElapsedTicks
+	.long LDIFF_SYM58
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.align 3
+Lfde7_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Diagnostics.Stopwatch:Start"
+	.asciz "System_Diagnostics_Stopwatch_Start"
+
+	.byte 2,105
+	.quad System_Diagnostics_Stopwatch_Start
+	.quad Lme_8
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM59=LTDIE_5_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM59
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM60=Lfde8_end - Lfde8_start
+	.long LDIFF_SYM60
+Lfde8_start:
+
+	.long 0
+	.align 3
+	.quad System_Diagnostics_Stopwatch_Start
+
+LDIFF_SYM61=Lme_8 - System_Diagnostics_Stopwatch_Start
+	.long LDIFF_SYM61
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29,68,154,2
+	.align 3
+Lfde8_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Diagnostics.Stopwatch:Stop"
+	.asciz "System_Diagnostics_Stopwatch_Stop"
+
+	.byte 2,113
+	.quad System_Diagnostics_Stopwatch_Stop
+	.quad Lme_9
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM62=LTDIE_5_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM62
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM63=Lfde9_end - Lfde9_start
+	.long LDIFF_SYM63
+Lfde9_start:
+
+	.long 0
+	.align 3
+	.quad System_Diagnostics_Stopwatch_Stop
+
+LDIFF_SYM64=Lme_9 - System_Diagnostics_Stopwatch_Stop
+	.long LDIFF_SYM64
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,154,4
+	.align 3
+Lfde9_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Diagnostics.Stopwatch:.cctor"
+	.asciz "System_Diagnostics_Stopwatch__cctor"
+
+	.byte 2,44
+	.quad System_Diagnostics_Stopwatch__cctor
+	.quad Lme_a
+
+	.byte 2,118,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM65=Lfde10_end - Lfde10_start
+	.long LDIFF_SYM65
+Lfde10_start:
+
+	.long 0
+	.align 3
+	.quad System_Diagnostics_Stopwatch__cctor
+
+LDIFF_SYM66=Lme_a - System_Diagnostics_Stopwatch__cctor
+	.long LDIFF_SYM66
+	.long 0
+	.byte 12,31,0,68,14,16,157,2,158,1,68,13,29
+	.align 3
+Lfde10_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_8:
+
+	.byte 5
+	.asciz "System_Attribute"
+
+	.byte 16,16
+LDIFF_SYM67=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM67
+	.byte 2,35,0,0,7
+	.asciz "System_Attribute"
+
+LDIFF_SYM68=LTDIE_8 - Ldebug_info_start
+	.long LDIFF_SYM68
+LTDIE_8_POINTER:
+
+	.byte 13
+LDIFF_SYM69=LTDIE_8 - Ldebug_info_start
+	.long LDIFF_SYM69
+LTDIE_8_REFERENCE:
+
+	.byte 14
+LDIFF_SYM70=LTDIE_8 - Ldebug_info_start
+	.long LDIFF_SYM70
+LTDIE_7:
+
+	.byte 5
+	.asciz "System_ComponentModel_TypeConverterAttribute"
+
+	.byte 24,16
+LDIFF_SYM71=LTDIE_8 - Ldebug_info_start
+	.long LDIFF_SYM71
+	.byte 2,35,0,6
+	.asciz "<ConverterTypeName>k__BackingField"
+
+LDIFF_SYM72=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM72
+	.byte 2,35,16,0,7
+	.asciz "System_ComponentModel_TypeConverterAttribute"
+
+LDIFF_SYM73=LTDIE_7 - Ldebug_info_start
+	.long LDIFF_SYM73
+LTDIE_7_POINTER:
+
+	.byte 13
+LDIFF_SYM74=LTDIE_7 - Ldebug_info_start
+	.long LDIFF_SYM74
+LTDIE_7_REFERENCE:
+
+	.byte 14
+LDIFF_SYM75=LTDIE_7 - Ldebug_info_start
+	.long LDIFF_SYM75
+	.byte 2
+	.asciz "System.ComponentModel.TypeConverterAttribute:.ctor"
+	.asciz "System_ComponentModel_TypeConverterAttribute__ctor"
+
+	.byte 3,29
+	.quad System_ComponentModel_TypeConverterAttribute__ctor
+	.quad Lme_b
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM76=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM76
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM77=Lfde11_end - Lfde11_start
+	.long LDIFF_SYM77
+Lfde11_start:
+
+	.long 0
+	.align 3
+	.quad System_ComponentModel_TypeConverterAttribute__ctor
+
+LDIFF_SYM78=Lme_b - System_ComponentModel_TypeConverterAttribute__ctor
+	.long LDIFF_SYM78
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde11_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_10:
+
+	.byte 5
+	.asciz "System_Reflection_MemberInfo"
+
+	.byte 16,16
+LDIFF_SYM79=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM79
+	.byte 2,35,0,0,7
+	.asciz "System_Reflection_MemberInfo"
+
+LDIFF_SYM80=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM80
+LTDIE_10_POINTER:
+
+	.byte 13
+LDIFF_SYM81=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM81
+LTDIE_10_REFERENCE:
+
+	.byte 14
+LDIFF_SYM82=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM82
+LTDIE_9:
+
+	.byte 5
+	.asciz "System_Type"
+
+	.byte 24,16
+LDIFF_SYM83=LTDIE_10 - Ldebug_info_start
+	.long LDIFF_SYM83
+	.byte 2,35,0,6
+	.asciz "_impl"
+
+LDIFF_SYM84=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM84
+	.byte 2,35,16,0,7
+	.asciz "System_Type"
+
+LDIFF_SYM85=LTDIE_9 - Ldebug_info_start
+	.long LDIFF_SYM85
+LTDIE_9_POINTER:
+
+	.byte 13
+LDIFF_SYM86=LTDIE_9 - Ldebug_info_start
+	.long LDIFF_SYM86
+LTDIE_9_REFERENCE:
+
+	.byte 14
+LDIFF_SYM87=LTDIE_9 - Ldebug_info_start
+	.long LDIFF_SYM87
+	.byte 2
+	.asciz "System.ComponentModel.TypeConverterAttribute:.ctor"
+	.asciz "System_ComponentModel_TypeConverterAttribute__ctor_System_Type"
+
+	.byte 3,40
+	.quad System_ComponentModel_TypeConverterAttribute__ctor_System_Type
+	.quad Lme_c
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM88=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM88
+	.byte 2,141,16,3
+	.asciz "type"
+
+LDIFF_SYM89=LTDIE_9_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM89
+	.byte 2,141,24,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM90=Lfde12_end - Lfde12_start
+	.long LDIFF_SYM90
+Lfde12_start:
+
+	.long 0
+	.align 3
+	.quad System_ComponentModel_TypeConverterAttribute__ctor_System_Type
+
+LDIFF_SYM91=Lme_c - System_ComponentModel_TypeConverterAttribute__ctor_System_Type
+	.long LDIFF_SYM91
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29
+	.align 3
+Lfde12_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.ComponentModel.TypeConverterAttribute:get_ConverterTypeName"
+	.asciz "System_ComponentModel_TypeConverterAttribute_get_ConverterTypeName"
+
+	.byte 3,62
+	.quad System_ComponentModel_TypeConverterAttribute_get_ConverterTypeName
+	.quad Lme_d
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM92=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM92
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM93=Lfde13_end - Lfde13_start
+	.long LDIFF_SYM93
+Lfde13_start:
+
+	.long 0
+	.align 3
+	.quad System_ComponentModel_TypeConverterAttribute_get_ConverterTypeName
+
+LDIFF_SYM94=Lme_d - System_ComponentModel_TypeConverterAttribute_get_ConverterTypeName
+	.long LDIFF_SYM94
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde13_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.ComponentModel.TypeConverterAttribute:Equals"
+	.asciz "System_ComponentModel_TypeConverterAttribute_Equals_object"
+
+	.byte 3,66
+	.quad System_ComponentModel_TypeConverterAttribute_Equals_object
+	.quad Lme_e
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM95=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM95
+	.byte 2,141,32,3
+	.asciz "obj"
+
+LDIFF_SYM96=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM96
+	.byte 1,106,11
+	.asciz "other"
+
+LDIFF_SYM97=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM97
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM98=Lfde14_end - Lfde14_start
+	.long LDIFF_SYM98
+Lfde14_start:
+
+	.long 0
+	.align 3
+	.quad System_ComponentModel_TypeConverterAttribute_Equals_object
+
+LDIFF_SYM99=Lme_e - System_ComponentModel_TypeConverterAttribute_Equals_object
+	.long LDIFF_SYM99
+	.long 0
+	.byte 12,31,0,68,14,48,157,6,158,5,68,13,29,68,152,4,68,154,3
+	.align 3
+Lfde14_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.ComponentModel.TypeConverterAttribute:GetHashCode"
+	.asciz "System_ComponentModel_TypeConverterAttribute_GetHashCode"
+
+	.byte 3,72
+	.quad System_ComponentModel_TypeConverterAttribute_GetHashCode
+	.quad Lme_f
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM100=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM100
+	.byte 2,141,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM101=Lfde15_end - Lfde15_start
+	.long LDIFF_SYM101
+Lfde15_start:
+
+	.long 0
+	.align 3
+	.quad System_ComponentModel_TypeConverterAttribute_GetHashCode
+
+LDIFF_SYM102=Lme_f - System_ComponentModel_TypeConverterAttribute_GetHashCode
+	.long LDIFF_SYM102
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde15_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.ComponentModel.TypeConverterAttribute:.cctor"
+	.asciz "System_ComponentModel_TypeConverterAttribute__cctor"
+
+	.byte 3,21
+	.quad System_ComponentModel_TypeConverterAttribute__cctor
+	.quad Lme_10
+
+	.byte 2,118,16,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM103=Lfde16_end - Lfde16_start
+	.long LDIFF_SYM103
+Lfde16_start:
+
+	.long 0
+	.align 3
+	.quad System_ComponentModel_TypeConverterAttribute__cctor
+
+LDIFF_SYM104=Lme_10 - System_ComponentModel_TypeConverterAttribute__cctor
+	.long LDIFF_SYM104
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde16_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_11:
+
+	.byte 5
+	.asciz "System_ComponentModel_TypeConverter"
+
+	.byte 16,16
+LDIFF_SYM105=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM105
+	.byte 2,35,0,0,7
+	.asciz "System_ComponentModel_TypeConverter"
+
+LDIFF_SYM106=LTDIE_11 - Ldebug_info_start
+	.long LDIFF_SYM106
+LTDIE_11_POINTER:
+
+	.byte 13
+LDIFF_SYM107=LTDIE_11 - Ldebug_info_start
+	.long LDIFF_SYM107
+LTDIE_11_REFERENCE:
+
+	.byte 14
+LDIFF_SYM108=LTDIE_11 - Ldebug_info_start
+	.long LDIFF_SYM108
+	.byte 2
+	.asciz "System.ComponentModel.TypeConverter:.ctor"
+	.asciz "System_ComponentModel_TypeConverter__ctor"
+
+	.byte 0,0
+	.quad System_ComponentModel_TypeConverter__ctor
+	.quad Lme_11
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM109=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM109
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM110=Lfde17_end - Lfde17_start
+	.long LDIFF_SYM110
+Lfde17_start:
+
+	.long 0
+	.align 3
+	.quad System_ComponentModel_TypeConverter__ctor
+
+LDIFF_SYM111=Lme_11 - System_ComponentModel_TypeConverter__ctor
+	.long LDIFF_SYM111
+	.long 0
+	.byte 12,31,0,68,14,32,157,4,158,3,68,13,29
+	.align 3
+Lfde17_end:
 
 .section __DWARF, __debug_info,regular,debug
 

@@ -1,18 +1,21 @@
 ﻿<Properties StartupConfiguration="{8A77D21F-25F2-4772-8CC1-9ACD06FF65C5}|Default">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
   <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3594B6C5-A056-4EDC-9563-9F5F7FE36800" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="mm/ViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="mm/InfoTVS.cs">
     <Files>
-      <File FileName="mm/ViewController.designer.cs" Line="17" Column="1" />
-      <File FileName="mm/ViewController.cs" Line="88" Column="54" />
+      <File FileName="mm/ViewController.cs" Line="42" Column="1" />
       <File FileName="mm/Info.plist" />
+      <File FileName="mm/Main.cs" Line="12" Column="1" />
+      <File FileName="mm/InfoCell.cs" Line="29" Column="10" />
+      <File FileName="mm/Info.cs" Line="10" Column="22" />
+      <File FileName="mm/InfoTVS.cs" Line="31" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="mm" expanded="True">
             <Node name="mm" expanded="True">
-              <Node name="Resources" expanded="True" selected="True" />
+              <Node name="Resources" expanded="True" />
               <Node name="ViewController.cs" expanded="True" />
             </Node>
           </Node>

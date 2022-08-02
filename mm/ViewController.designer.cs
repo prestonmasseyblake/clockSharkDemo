@@ -38,6 +38,16 @@ namespace mm
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (DateTimeLabel != null) {
+				DateTimeLabel.Dispose ();
+				DateTimeLabel = null;
+			}
+
+			if (EntriesLabel != null) {
+				EntriesLabel.Dispose ();
+				EntriesLabel = null;
+			}
+
 			if (InfoTableView != null) {
 				InfoTableView.Dispose ();
 				InfoTableView = null;
@@ -58,19 +68,9 @@ namespace mm
 				TimeLabel = null;
 			}
 
-			if (EntriesLabel != null) {
-				EntriesLabel.Dispose ();
-				EntriesLabel = null;
-			}
-
 			if (TotalTimeLabel != null) {
 				TotalTimeLabel.Dispose ();
 				TotalTimeLabel = null;
-			}
-
-			if (DateTimeLabel != null) {
-				DateTimeLabel.Dispose ();
-				DateTimeLabel = null;
 			}
 		}
 	}
