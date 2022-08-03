@@ -8,19 +8,20 @@ namespace mm
 {
     public partial class ViewController : UIViewController
     {
+        
 
         public override void PrepareForSegue(UIStoryboardSegue segue,
 NSObject sender)
         {
 
-            Console.WriteLine("Segueing");
             PopUpView target = segue.DestinationViewController as PopUpView;
-            target.myLat = infos[0].Lat;
-            target.myLong = infos[0].Long;
-
+            Console.WriteLine("This is row selected");
+            Console.WriteLine(rowSelected);
+            target.myLat = infos[rowSelected].Lat;
+            target.myLong = infos[rowSelected].Long;
         }
 
-            double myLat;
+        double myLat;
         double myLong;
 
         async void GetUserLocation()
@@ -33,7 +34,6 @@ NSObject sender)
                 {
                     myLat = location.Latitude;
                     myLong = location.Longitude;
-                    Console.WriteLine($"Latitude: {location.Latitude}, Longitude: {location.Longitude}, Altitude: {location.Altitude}");
                 }
             }
             catch (FeatureNotSupportedException fnsEx)
@@ -72,9 +72,10 @@ NSObject sender)
         int singleMinPlace = 0;
         int tensMinPlace = 0;
         int hoursPlace = 0;
+        public static int rowSelected = 0;
         int tensHoursplace = 0;
         public List<Info> infos;
-    
+
         //create a global array of dictionaries
         public ViewController (IntPtr handle) : base (handle)
         {
@@ -83,8 +84,6 @@ NSObject sender)
         {
             base.ViewDidLoad ();
             GetUserLocation();
-            // location based stuff
-            //end location based stuff
             UIApplication.SharedApplication.StatusBarStyle = UIStatusBarStyle.LightContent;
             DateTimeLabel.Text = DateTime.Now.ToString("dd MMMM, yyyy").ToUpper();
 
@@ -97,8 +96,6 @@ NSObject sender)
 
             };
             InfoTableView.Source = new InfoTVS(infos);
-            //InfoTableView.RowHeight = UITableView.AutomaticDimension;
-            //InfoTableView.EstimatedRowHeight = 100f;
             InfoTableView.ReloadData();
             nexterButton.TouchUpInside += NexterButton_TouchUpInside;
             // Perform any additional setup after loading the view, typically from a nib.
@@ -180,8 +177,6 @@ NSObject sender)
                          Long = myLong}
                          );
                          InfoTableView.Source = new InfoTVS(infos);
-                         //InfoTableView.RowHeight = UITableView.AutomaticDimension;
-                         //InfoTableView.EstimatedRowHeight = 100f;
                          InfoTableView.ReloadData();
                          totalTime += counter;
                          secondCounter = 0;

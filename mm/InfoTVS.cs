@@ -25,6 +25,7 @@ namespace mm
         public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
         {
             Console.WriteLine($"Long press on row, at {indexPath.Row}");
+            ViewController.rowSelected = indexPath.Row;
             storevalues.SetDouble(infos[indexPath.Row].Lat, "Latitude");
             storevalues.SetDouble(infos[indexPath.Row].Long, "Longitude");
 
