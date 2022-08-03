@@ -10,11 +10,14 @@ using Xamarin.Essentials;
 
 namespace mm
 {
+   
 	public partial class PopUpView : UIViewController
 	{
+
+        
         double myLat;
         double myLong;
-
+        double myvalue;
         async void GetUserLocation()
         {
             try
@@ -51,8 +54,10 @@ namespace mm
 		{
 		}
         
+        //UserData.SetString(this.UserName,"UserName");
         UILabel label1;
         MKMapView map;
+       
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();

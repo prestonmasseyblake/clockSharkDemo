@@ -154,6 +154,7 @@
           <DependentUpon>PopUpView.cs</DependentUpon>
         </Compile>
         <Compile Include="ClockInLocation.cs" />
+        <Compile Include="LocationStore.cs" />
     </ItemGroup>
     <ItemGroup>
       <BundleResource Include="Resources\plybtn.png" />

@@ -7,6 +7,8 @@ namespace mm
         public int Time { get; set;}
         public string ClockIn {get;set;}
         public string ClockOut {get;set;}
+        public double Lat { get; set; }
+        public double Long { get; set; }
         public Info()
         {
             
