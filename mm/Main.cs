@@ -1,9 +1,12 @@
-﻿using UIKit;
+﻿using Foundation;
+using UIKit;
 
 namespace mm
 {
     public class Application
     {
+        
+
         public static double Latitudee = 2;
         //public double Longitude = 2;
         // This is the main entry point of the application.

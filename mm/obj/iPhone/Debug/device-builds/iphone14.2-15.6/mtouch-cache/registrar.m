@@ -1921,31 +1921,31 @@ exception_handling:
 	-(UIWindow *) window
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0xC00);
+		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0xD00);
 	}
 
 	-(void) setWindow:(UIWindow *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0xD00);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0xE00);
 	}
 
 	-(BOOL) application:(UIApplication *)p0 didFinishLaunchingWithOptions:(NSDictionary *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_6 (self, _cmd, &managed_method, p0, p1, 0xE00);
+		return native_to_managed_trampoline_6 (self, _cmd, &managed_method, p0, p1, 0xF00);
 	}
 
 	-(UISceneConfiguration *) application:(UIApplication *)p0 configurationForConnectingSceneSession:(UISceneSession *)p1 options:(UISceneConnectionOptions *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_7 (self, _cmd, &managed_method, p0, p1, p2, 0xF00);
+		return native_to_managed_trampoline_7 (self, _cmd, &managed_method, p0, p1, p2, 0x1000);
 	}
 
 	-(void) application:(UIApplication *)p0 didDiscardSceneSessions:(NSSet <UISceneSession *>*)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x1000);
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x1100);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -1958,7 +1958,7 @@ exception_handling:
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_5 (self, _cmd, &managed_method, &call_super, 0x1100);
+		id rv = native_to_managed_trampoline_5 (self, _cmd, &managed_method, &call_super, 0x1200);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [UIResponder class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -2011,49 +2011,49 @@ exception_handling:
 	-(UILabel *) ClockInLabel
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x2C00);
+		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x2E00);
 	}
 
 	-(void) setClockInLabel:(UILabel *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x2D00);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x2F00);
 	}
 
 	-(UILabel *) ClockOutLabel
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x2E00);
+		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x3000);
 	}
 
 	-(void) setClockOutLabel:(UILabel *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x2F00);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3100);
 	}
 
 	-(UILabel *) DateLabel
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x3000);
+		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x3200);
 	}
 
 	-(void) setDateLabel:(UILabel *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3100);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3300);
 	}
 
 	-(UILabel *) TimeLabel
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x3200);
+		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x3400);
 	}
 
 	-(void) setTimeLabel:(UILabel *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3300);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3500);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -2074,7 +2074,7 @@ exception_handling:
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_5 (self, _cmd, &managed_method, &call_super, 0x3BE04);
+		id rv = native_to_managed_trampoline_5 (self, _cmd, &managed_method, &call_super, 0x3C304);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -2092,6 +2092,7 @@ exception_handling:
 	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
 	-(enum XamarinGCHandleFlags) xamarinGetFlags;
 	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) tableView:(UITableView *)p0 didSelectRowAtIndexPath:(NSIndexPath *)p1;
 	-(UITableViewCell *) tableView:(UITableView *)p0 cellForRowAtIndexPath:(NSIndexPath *)p1;
 	-(NSInteger) tableView:(UITableView *)p0 numberOfRowsInSection:(NSInteger)p1;
 	-(BOOL) conformsToProtocol:(void *)p0;
@@ -2138,16 +2139,22 @@ exception_handling:
 	}
 
 
+	-(void) tableView:(UITableView *)p0 didSelectRowAtIndexPath:(NSIndexPath *)p1
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x4500);
+	}
+
 	-(UITableViewCell *) tableView:(UITableView *)p0 cellForRowAtIndexPath:(NSIndexPath *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, p1, 0x3F00);
+		return native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, p1, 0x4600);
 	}
 
 	-(NSInteger) tableView:(UITableView *)p0 numberOfRowsInSection:(NSInteger)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, p0, p1, 0x4000);
+		return native_to_managed_trampoline_10 (self, _cmd, &managed_method, p0, p1, 0x4700);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -2201,13 +2208,13 @@ exception_handling:
 	-(void) viewDidLoad
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x4200);
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x4900);
 	}
 
 	-(void) didReceiveMemoryWarning
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x4300);
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x4A00);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -2220,7 +2227,7 @@ exception_handling:
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_5 (self, _cmd, &managed_method, &call_super, 0x4100);
+		id rv = native_to_managed_trampoline_5 (self, _cmd, &managed_method, &call_super, 0x4800);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [UIViewController class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -2273,13 +2280,73 @@ exception_handling:
 	-(void) viewDidLoad
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x4600);
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x4D00);
 	}
 
 	-(void) didReceiveMemoryWarning
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x4700);
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x4E00);
+	}
+
+	-(BOOL) conformsToProtocol:(void *)p0
+	{
+		static MonoMethod *managed_method = NULL;
+		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, p0, 0x10704);
+	}
+@end
+
+@implementation PopUpView {
+	XamarinObject __monoObjectGCHandle;
+}
+	-(void) release
+	{
+		xamarin_release_trampoline (self, _cmd);
+	}
+
+	-(id) retain
+	{
+		return xamarin_retain_trampoline (self, _cmd);
+	}
+
+	-(GCHandle) xamarinGetGCHandle
+	{
+		return __monoObjectGCHandle.gc_handle;
+	}
+
+	-(bool) xamarinSetGCHandle: (GCHandle) gc_handle flags: (enum XamarinGCHandleFlags) flags
+	{
+		if (((flags & XamarinGCHandleFlags_InitialSet) == XamarinGCHandleFlags_InitialSet) && __monoObjectGCHandle.gc_handle != INVALID_GCHANDLE) {
+			return false;
+		}
+		flags = (enum XamarinGCHandleFlags) (flags & ~XamarinGCHandleFlags_InitialSet);
+		__monoObjectGCHandle.gc_handle = gc_handle;
+		__monoObjectGCHandle.flags = flags;
+		__monoObjectGCHandle.native_object = self;
+		return true;
+	}
+
+	-(enum XamarinGCHandleFlags) xamarinGetFlags
+	{
+		return __monoObjectGCHandle.flags;
+	}
+
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags
+	{
+		__monoObjectGCHandle.flags = flags;
+	}
+
+
+	-(void) viewDidLoad
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x5100);
+	}
+
+	-(void) didReceiveMemoryWarning
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x5200);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -2354,13 +2421,13 @@ exception_handling:
 	-(NSString *) title
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, 0x4F00);
+		return native_to_managed_trampoline_12 (self, _cmd, &managed_method, 0x5500);
 	}
 
 	-(CLLocationCoordinate2D) coordinate
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_13 (self, _cmd, &managed_method, 0x5000);
+		return native_to_managed_trampoline_13 (self, _cmd, &managed_method, 0x5600);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -2414,157 +2481,103 @@ exception_handling:
 	-(UILabel *) DateTimeLabel
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x1A00);
+		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x1C00);
 	}
 
 	-(void) setDateTimeLabel:(UILabel *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x1B00);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x1D00);
 	}
 
 	-(UILabel *) EntriesLabel
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x1C00);
+		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x1E00);
 	}
 
 	-(void) setEntriesLabel:(UILabel *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x1D00);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x1F00);
 	}
 
 	-(UITableView *) InfoTableView
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x1E00);
+		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x2000);
 	}
 
 	-(void) setInfoTableView:(UITableView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x1F00);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x2100);
 	}
 
 	-(UIButton *) nexterButton
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x2000);
+		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x2200);
 	}
 
 	-(void) setNexterButton:(UIButton *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x2100);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x2300);
 	}
 
 	-(UIButton *) nxtBtn
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x2200);
+		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x2400);
 	}
 
 	-(void) setNxtBtn:(UIButton *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x2300);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x2500);
 	}
 
 	-(UILabel *) TimeLabel
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x2400);
+		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x2600);
 	}
 
 	-(void) setTimeLabel:(UILabel *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x2500);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x2700);
 	}
 
 	-(UILabel *) TotalTimeLabel
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x2600);
+		return native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x2800);
 	}
 
 	-(void) setTotalTimeLabel:(UILabel *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x2700);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x2900);
+	}
+
+	-(void) prepareForSegue:(UIStoryboardSegue *)p0 sender:(NSObject *)p1
+	{
+		static MonoMethod *managed_method = NULL;
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x1300);
 	}
 
 	-(void) viewDidLoad
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x1500);
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x1700);
 	}
 
 	-(void) didReceiveMemoryWarning
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x1900);
-	}
-
-	-(BOOL) conformsToProtocol:(void *)p0
-	{
-		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_4 (self, _cmd, &managed_method, p0, 0x10704);
-	}
-@end
-
-@implementation PopUpView {
-	XamarinObject __monoObjectGCHandle;
-}
-	-(void) release
-	{
-		xamarin_release_trampoline (self, _cmd);
-	}
-
-	-(id) retain
-	{
-		return xamarin_retain_trampoline (self, _cmd);
-	}
-
-	-(GCHandle) xamarinGetGCHandle
-	{
-		return __monoObjectGCHandle.gc_handle;
-	}
-
-	-(bool) xamarinSetGCHandle: (GCHandle) gc_handle flags: (enum XamarinGCHandleFlags) flags
-	{
-		if (((flags & XamarinGCHandleFlags_InitialSet) == XamarinGCHandleFlags_InitialSet) && __monoObjectGCHandle.gc_handle != INVALID_GCHANDLE) {
-			return false;
-		}
-		flags = (enum XamarinGCHandleFlags) (flags & ~XamarinGCHandleFlags_InitialSet);
-		__monoObjectGCHandle.gc_handle = gc_handle;
-		__monoObjectGCHandle.flags = flags;
-		__monoObjectGCHandle.native_object = self;
-		return true;
-	}
-
-	-(enum XamarinGCHandleFlags) xamarinGetFlags
-	{
-		return __monoObjectGCHandle.flags;
-	}
-
-	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags
-	{
-		__monoObjectGCHandle.flags = flags;
-	}
-
-
-	-(void) viewDidLoad
-	{
-		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x4B00);
-	}
-
-	-(void) didReceiveMemoryWarning
-	{
-		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x4C00);
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x1B00);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -2830,7 +2843,7 @@ exception_handling:
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_5 (self, _cmd, &managed_method, &call_super, 0x22604);
+		id rv = native_to_managed_trampoline_5 (self, _cmd, &managed_method, &call_super, 0x22704);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -2851,7 +2864,7 @@ exception_handling:
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_5 (self, _cmd, &managed_method, &call_super, 0x2C804);
+		id rv = native_to_managed_trampoline_5 (self, _cmd, &managed_method, &call_super, 0x2C904);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -2917,7 +2930,7 @@ exception_handling:
 	-(void) BridgeSelector
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x2E204);
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, 0x2E304);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -2938,7 +2951,7 @@ exception_handling:
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_5 (self, _cmd, &managed_method, &call_super, 0x35B04);
+		id rv = native_to_managed_trampoline_5 (self, _cmd, &managed_method, &call_super, 0x36104);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -2959,7 +2972,7 @@ exception_handling:
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_5 (self, _cmd, &managed_method, &call_super, 0x36F04);
+		id rv = native_to_managed_trampoline_5 (self, _cmd, &managed_method, &call_super, 0x37504);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -2980,7 +2993,7 @@ exception_handling:
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_5 (self, _cmd, &managed_method, &call_super, 0x37F04);
+		id rv = native_to_managed_trampoline_5 (self, _cmd, &managed_method, &call_super, 0x38504);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -3144,121 +3157,121 @@ exception_handling:
 	-(void) locationManager:(CLLocationManager *)p0 didChangeAuthorizationStatus:(unsigned int)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_15 (self, _cmd, &managed_method, p0, p1, 0x1E604);
+		native_to_managed_trampoline_15 (self, _cmd, &managed_method, p0, p1, 0x1E704);
 	}
 
 	-(void) locationManager:(CLLocationManager *)p0 didFinishDeferredUpdatesWithError:(NSError *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x1E704);
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x1E804);
 	}
 
 	-(void) locationManagerDidChangeAuthorization:(CLLocationManager *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x1E804);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x1E904);
 	}
 
 	-(void) locationManager:(CLLocationManager *)p0 didDetermineState:(NSInteger)p1 forRegion:(CLRegion *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_16 (self, _cmd, &managed_method, p0, p1, p2, 0x1E904);
+		native_to_managed_trampoline_16 (self, _cmd, &managed_method, p0, p1, p2, 0x1EA04);
 	}
 
 	-(void) locationManager:(CLLocationManager *)p0 didFailRangingBeaconsForConstraint:(CLBeaconIdentityConstraint *)p1 error:(NSError *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_3 (self, _cmd, &managed_method, p0, p1, p2, 0x1EA04);
+		native_to_managed_trampoline_3 (self, _cmd, &managed_method, p0, p1, p2, 0x1EB04);
 	}
 
 	-(void) locationManager:(CLLocationManager *)p0 didRangeBeacons:(NSArray *)p1 inRegion:(CLBeaconRegion *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_17 (self, _cmd, &managed_method, p0, p1, p2, 0x1EB04);
+		native_to_managed_trampoline_17 (self, _cmd, &managed_method, p0, p1, p2, 0x1EC04);
 	}
 
 	-(void) locationManager:(CLLocationManager *)p0 didRangeBeacons:(NSArray *)p1 satisfyingConstraint:(CLBeaconIdentityConstraint *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_17 (self, _cmd, &managed_method, p0, p1, p2, 0x1EC04);
+		native_to_managed_trampoline_17 (self, _cmd, &managed_method, p0, p1, p2, 0x1ED04);
 	}
 
 	-(void) locationManager:(CLLocationManager *)p0 didStartMonitoringForRegion:(CLRegion *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x1ED04);
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x1EE04);
 	}
 
 	-(void) locationManager:(CLLocationManager *)p0 didVisit:(CLVisit *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x1EE04);
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x1EF04);
 	}
 
 	-(void) locationManager:(CLLocationManager *)p0 didFailWithError:(NSError *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x1EF04);
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x1F004);
 	}
 
 	-(void) locationManagerDidPauseLocationUpdates:(CLLocationManager *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x1F004);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x1F104);
 	}
 
 	-(void) locationManagerDidResumeLocationUpdates:(CLLocationManager *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x1F104);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x1F204);
 	}
 
 	-(void) locationManager:(CLLocationManager *)p0 didUpdateLocations:(NSArray *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_18 (self, _cmd, &managed_method, p0, p1, 0x1F204);
+		native_to_managed_trampoline_18 (self, _cmd, &managed_method, p0, p1, 0x1F304);
 	}
 
 	-(void) locationManager:(CLLocationManager *)p0 monitoringDidFailForRegion:(CLRegion *)p1 withError:(NSError *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_3 (self, _cmd, &managed_method, p0, p1, p2, 0x1F304);
+		native_to_managed_trampoline_3 (self, _cmd, &managed_method, p0, p1, p2, 0x1F404);
 	}
 
 	-(void) locationManager:(CLLocationManager *)p0 rangingBeaconsDidFailForRegion:(CLBeaconRegion *)p1 withError:(NSError *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_3 (self, _cmd, &managed_method, p0, p1, p2, 0x1F404);
+		native_to_managed_trampoline_3 (self, _cmd, &managed_method, p0, p1, p2, 0x1F504);
 	}
 
 	-(void) locationManager:(CLLocationManager *)p0 didEnterRegion:(CLRegion *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x1F504);
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x1F604);
 	}
 
 	-(void) locationManager:(CLLocationManager *)p0 didExitRegion:(CLRegion *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x1F604);
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x1F704);
 	}
 
 	-(BOOL) locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_19 (self, _cmd, &managed_method, p0, 0x1F704);
+		return native_to_managed_trampoline_19 (self, _cmd, &managed_method, p0, 0x1F804);
 	}
 
 	-(void) locationManager:(CLLocationManager *)p0 didUpdateHeading:(CLHeading *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x1F804);
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x1F904);
 	}
 
 	-(void) locationManager:(CLLocationManager *)p0 didUpdateToLocation:(CLLocation *)p1 fromLocation:(CLLocation *)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_3 (self, _cmd, &managed_method, p0, p1, p2, 0x1F904);
+		native_to_managed_trampoline_3 (self, _cmd, &managed_method, p0, p1, p2, 0x1FA04);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -3337,85 +3350,85 @@ exception_handling:
 	-(void) scrollViewDidEndDecelerating:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3A504);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3AA04);
 	}
 
 	-(void) scrollViewWillBeginDecelerating:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3A604);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3AB04);
 	}
 
 	-(void) scrollViewDidChangeAdjustedContentInset:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3A704);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3AC04);
 	}
 
 	-(void) scrollViewDidZoom:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3A804);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3AD04);
 	}
 
 	-(void) scrollViewDidEndDragging:(UIScrollView *)p0 willDecelerate:(BOOL)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_20 (self, _cmd, &managed_method, p0, p1, 0x3A904);
+		native_to_managed_trampoline_20 (self, _cmd, &managed_method, p0, p1, 0x3AE04);
 	}
 
 	-(void) scrollViewWillBeginDragging:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3AA04);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3AF04);
 	}
 
 	-(void) scrollViewDidEndScrollingAnimation:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3AB04);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3B004);
 	}
 
 	-(void) scrollViewDidScroll:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3AC04);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3B104);
 	}
 
 	-(void) scrollViewDidScrollToTop:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3AD04);
+		native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x3B204);
 	}
 
 	-(BOOL) scrollViewShouldScrollToTop:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_19 (self, _cmd, &managed_method, p0, 0x3AE04);
+		return native_to_managed_trampoline_19 (self, _cmd, &managed_method, p0, 0x3B304);
 	}
 
 	-(UIView *) viewForZoomingInScrollView:(UIScrollView *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_21 (self, _cmd, &managed_method, p0, 0x3AF04);
+		return native_to_managed_trampoline_21 (self, _cmd, &managed_method, p0, 0x3B404);
 	}
 
 	-(void) scrollViewWillEndDragging:(UIScrollView *)p0 withVelocity:(CGPoint)p1 targetContentOffset:(CGPoint*)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_22 (self, _cmd, &managed_method, p0, p1, p2, 0x3B004);
+		native_to_managed_trampoline_22 (self, _cmd, &managed_method, p0, p1, p2, 0x3B504);
 	}
 
 	-(void) scrollViewDidEndZooming:(UIScrollView *)p0 withView:(UIView *)p1 atScale:(CGFloat)p2
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_23 (self, _cmd, &managed_method, p0, p1, p2, 0x3B104);
+		native_to_managed_trampoline_23 (self, _cmd, &managed_method, p0, p1, p2, 0x3B604);
 	}
 
 	-(void) scrollViewWillBeginZooming:(UIScrollView *)p0 withView:(UIView *)p1
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x3B204);
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, p1, 0x3B704);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
@@ -4477,22 +4490,22 @@ exception_handling:
 
 	static MTClassMap __xamarin_class_map [] = {
 		{ NULL, 0x3104 /* #0 'NSObject' => 'Foundation.NSObject, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0xB704 /* #1 'UIResponder' => 'UIKit.UIResponder, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xB804 /* #1 'UIResponder' => 'UIKit.UIResponder, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
 		{ NULL, 0x200 /* #2 'SceneDelegate' => 'NewSingleViewTemplate.SceneDelegate, mm' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
 		{ NULL, 0x400 /* #3 'AppDelegate' => 'mm.AppDelegate, mm' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0xA204 /* #4 'UIView' => 'UIKit.UIView, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0xA104 /* #5 'UITableViewCell' => 'UIKit.UITableViewCell, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xA304 /* #4 'UIView' => 'UIKit.UIView, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xA204 /* #5 'UITableViewCell' => 'UIKit.UITableViewCell, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
 		{ NULL, 0x600 /* #6 'InfoCell' => 'mm.InfoCell, mm' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0xC304 /* #7 'UIScrollViewDelegate' => 'UIKit.UIScrollViewDelegate, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0xC504 /* #8 'UITableViewSource' => 'UIKit.UITableViewSource, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xC404 /* #7 'UIScrollViewDelegate' => 'UIKit.UIScrollViewDelegate, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xC604 /* #8 'UITableViewSource' => 'UIKit.UITableViewSource, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
 		{ NULL, 0x800 /* #9 'mm_InfoTVS' => 'mm.InfoTVS, mm' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0xA304 /* #10 'UIViewController' => 'UIKit.UIViewController, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xA404 /* #10 'UIViewController' => 'UIKit.UIViewController, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
 		{ NULL, 0x900 /* #11 'MyViewController' => 'mm.MyViewController, mm' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
 		{ NULL, 0xA00 /* #12 'MyViewControllerr' => 'mm.MyViewControllerr, mm' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x1404 /* #13 'MKAnnotation' => 'MapKit.MKAnnotation, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0xC00 /* #14 'mm_ClockInLocation' => 'mm.ClockInLocation, mm' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x500 /* #15 'ViewController' => 'mm.ViewController, mm' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0xB00 /* #16 'PopUpView' => 'mm.PopUpView, mm' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0xB00 /* #13 'PopUpView' => 'mm.PopUpView, mm' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x1404 /* #14 'MKAnnotation' => 'MapKit.MKAnnotation, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xC00 /* #15 'mm_ClockInLocation' => 'mm.ClockInLocation, mm' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x500 /* #16 'ViewController' => 'mm.ViewController, mm' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
 		{ NULL, 0x304 /* #17 'SFSafariViewController' => 'SafariServices.SFSafariViewController, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
 		{ NULL, 0x404 /* #18 'SFSafariViewControllerDelegate' => 'SafariServices.SFSafariViewControllerDelegate, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
 		{ NULL, 0x504 /* #19 'CNContactPickerDelegate' => 'ContactsUI.CNContactPickerDelegate, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
@@ -4555,36 +4568,37 @@ exception_handling:
 		{ NULL, 0x9D04 /* #76 'UINavigationController' => 'UIKit.UINavigationController, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
 		{ NULL, 0x9B04 /* #77 'UIImagePickerController' => 'UIKit.UIImagePickerController, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
 		{ NULL, 0x9E04 /* #78 'UIScreen' => 'UIKit.UIScreen, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0xBE04 /* #79 'UIScrollView' => 'UIKit.UIScrollView, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0xA004 /* #80 'UITableView' => 'UIKit.UITableView, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0xA404 /* #81 'UIWindow' => 'UIKit.UIWindow, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0xA904 /* #82 'UIActivityItemSource' => 'UIKit.UIActivityItemSource, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0xB104 /* #83 'UIDocumentPickerDelegate' => 'UIKit.UIDocumentPickerDelegate, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0xB604 /* #84 'UINavigationControllerDelegate' => 'UIKit.UINavigationControllerDelegate, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0xB404 /* #85 'UIImagePickerControllerDelegate' => 'UIKit.UIImagePickerControllerDelegate, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0xB504 /* #86 'UILabel' => 'UIKit.UILabel, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0xB804 /* #87 'UIScene' => 'UIKit.UIScene, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0xB904 /* #88 'UISceneConfiguration' => 'UIKit.UISceneConfiguration, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0xBA04 /* #89 'UISceneConnectionOptions' => 'UIKit.UISceneConnectionOptions, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0xBD04 /* #90 'UISceneSession' => 'UIKit.UISceneSession, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x2804 /* #91 'NSDictionary' => 'Foundation.NSDictionary, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0x3504 /* #92 '__NSObject_Disposer' => 'Foundation.NSObject+NSObject_Disposer, Xamarin.iOS' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x5404 /* #93 'CoreLocation_CLLocationManager__CLLocationManagerDelegate' => 'CoreLocation.CLLocationManager+_CLLocationManagerDelegate, Xamarin.iOS' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x5304 /* #94 'CLLocationManager' => 'CoreLocation.CLLocationManager, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
-		{ NULL, 0xBF04 /* #95 'UIKit_UIScrollView__UIScrollViewDelegate' => 'UIKit.UIScrollView+_UIScrollViewDelegate, Xamarin.iOS' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x2B0C /* #96 'Xamarin_Essentials_ShareActivityItemSource' => 'Xamarin.Essentials.ShareActivityItemSource, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x2C0C /* #97 'Xamarin_Essentials_AuthManager' => 'Xamarin.Essentials.AuthManager, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x2D0C /* #98 'Xamarin_Essentials_SingleLocationListener' => 'Xamarin.Essentials.SingleLocationListener, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x40C /* #99 'Xamarin_Essentials_Contacts_ContactPickerDelegate' => 'Xamarin.Essentials.Contacts+ContactPickerDelegate, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x80C /* #100 'Xamarin_Essentials_FilePicker_PickerDelegate' => 'Xamarin.Essentials.FilePicker+PickerDelegate, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x90C /* #101 'Xamarin_Essentials_FilePicker_PickerPresentationControllerDelegate' => 'Xamarin.Essentials.FilePicker+PickerPresentationControllerDelegate, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0xE0C /* #102 'Xamarin_Essentials_MediaPicker_PhotoPickerDelegate' => 'Xamarin.Essentials.MediaPicker+PhotoPickerDelegate, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0xF0C /* #103 'Xamarin_Essentials_MediaPicker_PhotoPickerPresentationControllerDelegate' => 'Xamarin.Essentials.MediaPicker+PhotoPickerPresentationControllerDelegate, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x280C /* #104 'Xamarin_Essentials_WebAuthenticator_NativeSFSafariViewControllerDelegate' => 'Xamarin.Essentials.WebAuthenticator+NativeSFSafariViewControllerDelegate, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x290C /* #105 'Xamarin_Essentials_WebAuthenticator_ContextProvider' => 'Xamarin.Essentials.WebAuthenticator+ContextProvider, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x130C /* #106 'Xamarin_Essentials_Permissions_LocationWhenInUse_ManagerDelegate' => 'Xamarin.Essentials.Permissions+LocationWhenInUse+ManagerDelegate, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x460E /* #107 'OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource' => 'OpenTK.Platform.iPhoneOS.CADisplayLinkTimeSource, OpenTK-1.0' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
-		{ NULL, 0x480E /* #108 'OpenTK_Platform_iPhoneOS_iPhoneOSGameView' => 'OpenTK.Platform.iPhoneOS.iPhoneOSGameView, OpenTK-1.0' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0xA004 /* #79 'UIStoryboardSegue' => 'UIKit.UIStoryboardSegue, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xBF04 /* #80 'UIScrollView' => 'UIKit.UIScrollView, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xA104 /* #81 'UITableView' => 'UIKit.UITableView, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xA504 /* #82 'UIWindow' => 'UIKit.UIWindow, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xAA04 /* #83 'UIActivityItemSource' => 'UIKit.UIActivityItemSource, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xB204 /* #84 'UIDocumentPickerDelegate' => 'UIKit.UIDocumentPickerDelegate, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xB704 /* #85 'UINavigationControllerDelegate' => 'UIKit.UINavigationControllerDelegate, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xB504 /* #86 'UIImagePickerControllerDelegate' => 'UIKit.UIImagePickerControllerDelegate, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xB604 /* #87 'UILabel' => 'UIKit.UILabel, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xB904 /* #88 'UIScene' => 'UIKit.UIScene, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xBA04 /* #89 'UISceneConfiguration' => 'UIKit.UISceneConfiguration, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xBB04 /* #90 'UISceneConnectionOptions' => 'UIKit.UISceneConnectionOptions, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xBE04 /* #91 'UISceneSession' => 'UIKit.UISceneSession, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x2804 /* #92 'NSDictionary' => 'Foundation.NSDictionary, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0x3504 /* #93 '__NSObject_Disposer' => 'Foundation.NSObject+NSObject_Disposer, Xamarin.iOS' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x5404 /* #94 'CoreLocation_CLLocationManager__CLLocationManagerDelegate' => 'CoreLocation.CLLocationManager+_CLLocationManagerDelegate, Xamarin.iOS' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x5304 /* #95 'CLLocationManager' => 'CoreLocation.CLLocationManager, Xamarin.iOS' */, (MTTypeFlags) (0) /* None */ },
+		{ NULL, 0xC004 /* #96 'UIKit_UIScrollView__UIScrollViewDelegate' => 'UIKit.UIScrollView+_UIScrollViewDelegate, Xamarin.iOS' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x2B0C /* #97 'Xamarin_Essentials_ShareActivityItemSource' => 'Xamarin.Essentials.ShareActivityItemSource, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x2C0C /* #98 'Xamarin_Essentials_AuthManager' => 'Xamarin.Essentials.AuthManager, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x2D0C /* #99 'Xamarin_Essentials_SingleLocationListener' => 'Xamarin.Essentials.SingleLocationListener, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x40C /* #100 'Xamarin_Essentials_Contacts_ContactPickerDelegate' => 'Xamarin.Essentials.Contacts+ContactPickerDelegate, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x80C /* #101 'Xamarin_Essentials_FilePicker_PickerDelegate' => 'Xamarin.Essentials.FilePicker+PickerDelegate, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x90C /* #102 'Xamarin_Essentials_FilePicker_PickerPresentationControllerDelegate' => 'Xamarin.Essentials.FilePicker+PickerPresentationControllerDelegate, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0xE0C /* #103 'Xamarin_Essentials_MediaPicker_PhotoPickerDelegate' => 'Xamarin.Essentials.MediaPicker+PhotoPickerDelegate, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0xF0C /* #104 'Xamarin_Essentials_MediaPicker_PhotoPickerPresentationControllerDelegate' => 'Xamarin.Essentials.MediaPicker+PhotoPickerPresentationControllerDelegate, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x280C /* #105 'Xamarin_Essentials_WebAuthenticator_NativeSFSafariViewControllerDelegate' => 'Xamarin.Essentials.WebAuthenticator+NativeSFSafariViewControllerDelegate, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x290C /* #106 'Xamarin_Essentials_WebAuthenticator_ContextProvider' => 'Xamarin.Essentials.WebAuthenticator+ContextProvider, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x130C /* #107 'Xamarin_Essentials_Permissions_LocationWhenInUse_ManagerDelegate' => 'Xamarin.Essentials.Permissions+LocationWhenInUse+ManagerDelegate, Xamarin.Essentials' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x460E /* #108 'OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource' => 'OpenTK.Platform.iPhoneOS.CADisplayLinkTimeSource, OpenTK-1.0' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
+		{ NULL, 0x480E /* #109 'OpenTK_Platform_iPhoneOS_iPhoneOSGameView' => 'OpenTK.Platform.iPhoneOS.iPhoneOSGameView, OpenTK-1.0' */, (MTTypeFlags) (3) /* CustomType, UserType */ },
 		{ NULL, 0 },
 	};
 
@@ -4611,13 +4625,13 @@ exception_handling:
 		{ 0x8804 /* AuthenticationServices.IASAuthorizationControllerDelegate */, 0x8904 /* ASAuthorizationControllerDelegateWrapper */ },
 		{ 0x8A04 /* AuthenticationServices.IASAuthorizationControllerPresentationContextProviding */, 0x8B04 /* ASAuthorizationControllerPresentationContextProvidingWrapper */ },
 		{ 0x8C04 /* AuthenticationServices.IASAuthorizationCredential */, 0x8D04 /* ASAuthorizationCredentialWrapper */ },
-		{ 0xA704 /* UIKit.IUIActivityItemSource */, 0xA804 /* UIActivityItemSourceWrapper */ },
-		{ 0xAA04 /* UIKit.IUIApplicationDelegate */, 0xAB04 /* UIApplicationDelegateWrapper */ },
-		{ 0xAD04 /* UIKit.IUICoordinateSpace */, 0xAE04 /* UICoordinateSpaceWrapper */ },
-		{ 0xAF04 /* UIKit.IUIDocumentPickerDelegate */, 0xB004 /* UIDocumentPickerDelegateWrapper */ },
-		{ 0xB204 /* UIKit.IUIDynamicItem */, 0xB304 /* UIDynamicItemWrapper */ },
-		{ 0xBB04 /* UIKit.IUISceneDelegate */, 0xBC04 /* UISceneDelegateWrapper */ },
-		{ 0xC604 /* UIKit.IUIWindowSceneDelegate */, 0xC704 /* UIWindowSceneDelegateWrapper */ },
+		{ 0xA804 /* UIKit.IUIActivityItemSource */, 0xA904 /* UIActivityItemSourceWrapper */ },
+		{ 0xAB04 /* UIKit.IUIApplicationDelegate */, 0xAC04 /* UIApplicationDelegateWrapper */ },
+		{ 0xAE04 /* UIKit.IUICoordinateSpace */, 0xAF04 /* UICoordinateSpaceWrapper */ },
+		{ 0xB004 /* UIKit.IUIDocumentPickerDelegate */, 0xB104 /* UIDocumentPickerDelegateWrapper */ },
+		{ 0xB304 /* UIKit.IUIDynamicItem */, 0xB404 /* UIDynamicItemWrapper */ },
+		{ 0xBC04 /* UIKit.IUISceneDelegate */, 0xBD04 /* UISceneDelegateWrapper */ },
+		{ 0xC704 /* UIKit.IUIWindowSceneDelegate */, 0xC804 /* UIWindowSceneDelegateWrapper */ },
 	};
 
 	static struct MTRegistrationMap __xamarin_registration_map = {
@@ -4628,7 +4642,7 @@ exception_handling:
 		__xamarin_protocol_wrapper_map,
 		{ NULL, NULL },
 		8,
-		109,
+		110,
 		0,
 		1,
 		14,
@@ -4649,10 +4663,10 @@ void xamarin_create_classes () {
 	__xamarin_class_map [10].handle = objc_getClass ("UIViewController");
 	__xamarin_class_map [11].handle = [MyViewController class];
 	__xamarin_class_map [12].handle = [MyViewControllerr class];
-	__xamarin_class_map [13].handle = objc_getClass ("MKAnnotation");
-	__xamarin_class_map [14].handle = [mm_ClockInLocation class];
-	__xamarin_class_map [15].handle = [ViewController class];
-	__xamarin_class_map [16].handle = [PopUpView class];
+	__xamarin_class_map [13].handle = [PopUpView class];
+	__xamarin_class_map [14].handle = objc_getClass ("MKAnnotation");
+	__xamarin_class_map [15].handle = [mm_ClockInLocation class];
+	__xamarin_class_map [16].handle = [ViewController class];
 	__xamarin_class_map [17].handle = objc_getClass ("SFSafariViewController");
 	__xamarin_class_map [18].handle = objc_getClass ("SFSafariViewControllerDelegate");
 	__xamarin_class_map [19].handle = objc_getClass ("CNContactPickerDelegate");
@@ -4715,36 +4729,37 @@ void xamarin_create_classes () {
 	__xamarin_class_map [76].handle = objc_getClass ("UINavigationController");
 	__xamarin_class_map [77].handle = objc_getClass ("UIImagePickerController");
 	__xamarin_class_map [78].handle = objc_getClass ("UIScreen");
-	__xamarin_class_map [79].handle = objc_getClass ("UIScrollView");
-	__xamarin_class_map [80].handle = objc_getClass ("UITableView");
-	__xamarin_class_map [81].handle = objc_getClass ("UIWindow");
-	__xamarin_class_map [82].handle = objc_getClass ("UIActivityItemSource");
-	__xamarin_class_map [83].handle = objc_getClass ("UIDocumentPickerDelegate");
-	__xamarin_class_map [84].handle = objc_getClass ("UINavigationControllerDelegate");
-	__xamarin_class_map [85].handle = objc_getClass ("UIImagePickerControllerDelegate");
-	__xamarin_class_map [86].handle = objc_getClass ("UILabel");
-	__xamarin_class_map [87].handle = objc_getClass ("UIScene");
-	__xamarin_class_map [88].handle = objc_getClass ("UISceneConfiguration");
-	__xamarin_class_map [89].handle = objc_getClass ("UISceneConnectionOptions");
-	__xamarin_class_map [90].handle = objc_getClass ("UISceneSession");
-	__xamarin_class_map [91].handle = objc_getClass ("NSDictionary");
-	__xamarin_class_map [92].handle = objc_getClass ("__NSObject_Disposer");
-	__xamarin_class_map [93].handle = objc_getClass ("CoreLocation_CLLocationManager__CLLocationManagerDelegate");
-	__xamarin_class_map [94].handle = objc_getClass ("CLLocationManager");
-	__xamarin_class_map [95].handle = objc_getClass ("UIKit_UIScrollView__UIScrollViewDelegate");
-	__xamarin_class_map [96].handle = [Xamarin_Essentials_ShareActivityItemSource class];
-	__xamarin_class_map [97].handle = [Xamarin_Essentials_AuthManager class];
-	__xamarin_class_map [98].handle = [Xamarin_Essentials_SingleLocationListener class];
-	__xamarin_class_map [99].handle = [Xamarin_Essentials_Contacts_ContactPickerDelegate class];
-	__xamarin_class_map [100].handle = [Xamarin_Essentials_FilePicker_PickerDelegate class];
-	__xamarin_class_map [101].handle = [Xamarin_Essentials_FilePicker_PickerPresentationControllerDelegate class];
-	__xamarin_class_map [102].handle = [Xamarin_Essentials_MediaPicker_PhotoPickerDelegate class];
-	__xamarin_class_map [103].handle = [Xamarin_Essentials_MediaPicker_PhotoPickerPresentationControllerDelegate class];
-	__xamarin_class_map [104].handle = [Xamarin_Essentials_WebAuthenticator_NativeSFSafariViewControllerDelegate class];
-	__xamarin_class_map [105].handle = [Xamarin_Essentials_WebAuthenticator_ContextProvider class];
-	__xamarin_class_map [106].handle = [Xamarin_Essentials_Permissions_LocationWhenInUse_ManagerDelegate class];
-	__xamarin_class_map [107].handle = [OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource class];
-	__xamarin_class_map [108].handle = [OpenTK_Platform_iPhoneOS_iPhoneOSGameView class];
+	__xamarin_class_map [79].handle = objc_getClass ("UIStoryboardSegue");
+	__xamarin_class_map [80].handle = objc_getClass ("UIScrollView");
+	__xamarin_class_map [81].handle = objc_getClass ("UITableView");
+	__xamarin_class_map [82].handle = objc_getClass ("UIWindow");
+	__xamarin_class_map [83].handle = objc_getClass ("UIActivityItemSource");
+	__xamarin_class_map [84].handle = objc_getClass ("UIDocumentPickerDelegate");
+	__xamarin_class_map [85].handle = objc_getClass ("UINavigationControllerDelegate");
+	__xamarin_class_map [86].handle = objc_getClass ("UIImagePickerControllerDelegate");
+	__xamarin_class_map [87].handle = objc_getClass ("UILabel");
+	__xamarin_class_map [88].handle = objc_getClass ("UIScene");
+	__xamarin_class_map [89].handle = objc_getClass ("UISceneConfiguration");
+	__xamarin_class_map [90].handle = objc_getClass ("UISceneConnectionOptions");
+	__xamarin_class_map [91].handle = objc_getClass ("UISceneSession");
+	__xamarin_class_map [92].handle = objc_getClass ("NSDictionary");
+	__xamarin_class_map [93].handle = objc_getClass ("__NSObject_Disposer");
+	__xamarin_class_map [94].handle = objc_getClass ("CoreLocation_CLLocationManager__CLLocationManagerDelegate");
+	__xamarin_class_map [95].handle = objc_getClass ("CLLocationManager");
+	__xamarin_class_map [96].handle = objc_getClass ("UIKit_UIScrollView__UIScrollViewDelegate");
+	__xamarin_class_map [97].handle = [Xamarin_Essentials_ShareActivityItemSource class];
+	__xamarin_class_map [98].handle = [Xamarin_Essentials_AuthManager class];
+	__xamarin_class_map [99].handle = [Xamarin_Essentials_SingleLocationListener class];
+	__xamarin_class_map [100].handle = [Xamarin_Essentials_Contacts_ContactPickerDelegate class];
+	__xamarin_class_map [101].handle = [Xamarin_Essentials_FilePicker_PickerDelegate class];
+	__xamarin_class_map [102].handle = [Xamarin_Essentials_FilePicker_PickerPresentationControllerDelegate class];
+	__xamarin_class_map [103].handle = [Xamarin_Essentials_MediaPicker_PhotoPickerDelegate class];
+	__xamarin_class_map [104].handle = [Xamarin_Essentials_MediaPicker_PhotoPickerPresentationControllerDelegate class];
+	__xamarin_class_map [105].handle = [Xamarin_Essentials_WebAuthenticator_NativeSFSafariViewControllerDelegate class];
+	__xamarin_class_map [106].handle = [Xamarin_Essentials_WebAuthenticator_ContextProvider class];
+	__xamarin_class_map [107].handle = [Xamarin_Essentials_Permissions_LocationWhenInUse_ManagerDelegate class];
+	__xamarin_class_map [108].handle = [OpenTK_Platform_iPhoneOS_CADisplayLinkTimeSource class];
+	__xamarin_class_map [109].handle = [OpenTK_Platform_iPhoneOS_iPhoneOSGameView class];
 	xamarin_add_registration_map (&__xamarin_registration_map, false);
 }
 

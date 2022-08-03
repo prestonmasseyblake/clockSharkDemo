@@ -9,7 +9,18 @@ namespace mm
     public partial class ViewController : UIViewController
     {
 
-        double myLat;
+        public override void PrepareForSegue(UIStoryboardSegue segue,
+NSObject sender)
+        {
+
+            Console.WriteLine("Segueing");
+            PopUpView target = segue.DestinationViewController as PopUpView;
+            target.myLat = infos[0].Lat;
+            target.myLong = infos[0].Long;
+
+        }
+
+            double myLat;
         double myLong;
 
         async void GetUserLocation()
@@ -81,7 +92,7 @@ namespace mm
             {
                 new Info()
                 {
-                    ClockIn = "10:06:13PM", ClockOut = "10:06:19PM", Date="7/29/2022", Time=6, Lat=37.785834, Long=-122.406417
+                    ClockIn = "10:06:13PM", ClockOut = "10:06:19PM", Date="7/29/2022", Time=6, Lat=myLat, Long=myLong
                 },
 
             };

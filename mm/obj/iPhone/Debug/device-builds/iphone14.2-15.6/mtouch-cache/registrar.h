@@ -25,10 +25,10 @@
 @class mm_InfoTVS;
 @class MyViewController;
 @class MyViewControllerr;
+@class PopUpView;
 @class MKAnnotation;
 @class mm_ClockInLocation;
 @class ViewController;
-@class PopUpView;
 @class SFSafariViewControllerDelegate;
 @class CNContactPickerDelegate;
 @class Foundation_NSDispatcher;
@@ -153,6 +153,19 @@
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 
+@interface PopUpView : UIViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) viewDidLoad;
+	-(void) didReceiveMemoryWarning;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
 @interface MKAnnotation : NSObject<MKAnnotation> {
 }
 	-(id) init;
@@ -200,19 +213,7 @@
 	-(void) setTimeLabel:(UILabel *)p0;
 	-(UILabel *) TotalTimeLabel;
 	-(void) setTotalTimeLabel:(UILabel *)p0;
-	-(void) viewDidLoad;
-	-(void) didReceiveMemoryWarning;
-	-(BOOL) conformsToProtocol:(void *)p0;
-@end
-
-@interface PopUpView : UIViewController {
-}
-	-(void) release;
-	-(id) retain;
-	-(GCHandle) xamarinGetGCHandle;
-	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
-	-(enum XamarinGCHandleFlags) xamarinGetFlags;
-	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) prepareForSegue:(UIStoryboardSegue *)p0 sender:(NSObject *)p1;
 	-(void) viewDidLoad;
 	-(void) didReceiveMemoryWarning;
 	-(BOOL) conformsToProtocol:(void *)p0;
